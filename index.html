@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Online Registration form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <h1>The Code Review</h1>
+      </div>
+
+      <div class="main-header">
+        <h2>Signup for out newsletter</h2>
+        <p>Get the lates news on how your code is doing right in your inbox</p>
+      </div>
+
+      <div class="div-big">
+      </div>
+      <div class="div-small">
+      </div>
+    </header>
+
+      <form class="newsletter-form" action="index.html" method="post">
+        <fieldset>
+        <legend>Contact Information</legend>
+
+          <label for="fullName">Full Name
+          <input id="fullName" type="text" name="fullName" required placeholder="required">
+          </label>
+          <label for="emailAdd">Email Address
+          <input id="emailAdd" type="email" name="emailAdd" required placeholder="required">
+          </label>
+          <label for="phoneNum">Phone Number
+          <input id="phoneNum" type="tel" name="phoneNum" placeholder="Primary Number">
+          </label>
+          <label for="streetAdd">Street Address
+          <input id="streetAdd" type="text" name="streetAdd" placeholder="1234 Example Ave">
+          </label>
+          <label for="city">City
+          <input id="city" type="text" name="city">
+          </label>
+          <label for="state">State
+          <select id="state" name="state">
+            <option value="state">Choose State</option>
+          </select>
+          </label>
+          <label for="zipCode">Zip Code
+          <input id="zipCode" type="number" name="zipCode" placeholder="52555">
+          </label>
+
+        </fieldset>
+
+        <div class="div-small">
+        </div>
+
+        <fieldset>
+          <legend>Newsletter</legend>
+          <p>Select the newletter you would like to recieve</p>
+          <label for="html-news">
+            <input id="html-news" type="checkbox" name="html-news-letter" value="html-news">
+            HTML News</label>
+
+            <label for="css-news">
+            <input id="css-news" type="checkbox" name="css-news-letter" value="css-news">
+            CSS News</label>
+
+            <label for="javascript-news">
+            <input id="javascript-news" type="checkbox" name="javascript-news-letter" value="javascript-news">
+            Javascript News</label>
+
+
+            <label class="newsletter-label">Newletter Format</label>
+
+            <label for="html-format">
+            <input type="radio" id="html-format" name="form-format" value="HTML">
+            HTML</label>
+            <label for="plan-text">
+            <input id="plan-text" type="radio" name="form-format">
+            Plan text</label>
+
+          <label for="other-topics">Other topics you'd like to hear about
+          <textarea id="other-topics" name="other-topics" rows="8" cols="80">
+
+          </textarea>
+          </label>
+      </fieldset>
+        <input type="submit" value="Sign Up">
+      </form>
+    <footer>
+      <p>Copyright The Code Review</p>
+    </footer>
+  </body>
+</html>
