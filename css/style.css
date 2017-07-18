@@ -67,6 +67,7 @@ select {
   margin-bottom: 20px;
   margin-top: 10px;
   border-radius: 5px;
+  border: 1px solid transparent;
 }
 
 input[type="radio"],
@@ -79,6 +80,8 @@ input {
 
 input:focus, textarea:focus {
   border: 1px solid darkblue;
+  transition: .3s ease-in;
+  background: white;
 }
 
 select {
